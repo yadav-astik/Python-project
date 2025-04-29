@@ -23,7 +23,7 @@ print(f"Average Basket Size: {avg_basket:.2f}")
 daily_sales = df.groupby('Date')['Total_Sales'].sum()
 plt.figure(figsize=(10, 5))
 daily_sales.plot()
-plt.title('Daily Total Sales Over Time')
+plt.title('Daily Total Sales Over Time').
 plt.xlabel('Date')
 plt.ylabel('Total Sales')
 plt.grid(True)
