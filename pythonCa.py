@@ -12,7 +12,7 @@ print(df.head())
 # Convert 'Date' column to datetime format
 df['Date'] = pd.to_datetime(df['Date'])
 
-#  Total Sales (Total = Unit Price × Quantity)
+#  Total Sales (Total = Unit Price
 df['Total_Sales'] = df['Unit price'] * df['Quantity']
 
 #  Average Basket Size
