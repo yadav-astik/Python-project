@@ -30,7 +30,7 @@ plt.grid(True)
 plt.tight_layout()
 plt.show()
 
-# ( Bar Graph ) Total Sales by Product Line
+# ( Bar Graph ) Total Sales by Product 
 sales_by_product = df.groupby('Product line')['Total_Sales'].sum().sort_values()
 sales_by_product.plot(kind='barh', figsize=(8, 5), color='skyblue')
 plt.title('Total Sales by Product Line')
@@ -48,7 +48,7 @@ plt.tight_layout()
 plt.show()
 
 # Label Encoding for Categorical Features
-encoder = LabelEncoder()
+encoder = LabelEncoder().
 df['Gender_Encoded'] = encoder.fit_transform(df['Gender'])
 df['Customer_Type_Encoded'] = encoder.fit_transform(df['Customer type'])
 print(df[['Gender', 'Gender_Encoded', 'Customer type', 'Customer_Type_Encoded']].head())
