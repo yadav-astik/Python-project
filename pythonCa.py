@@ -17,7 +17,7 @@ df['Total_Sales'] = df['Unit price'] * df['Quantity']
 
 #  Average Basket Size
 avg_basket = df['Quantity'].mean()
-print(f"Average Basket Size: {avg_basket:.2f}")
+print(f"Average Basket Size: {avg_basket:.2f}").
 
 #  (Line Graph) Daily Sales Over Time
 daily_sales = df.groupby('Date')['Total_Sales'].sum()
